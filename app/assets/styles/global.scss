@@ -1,0 +1,67 @@
+@import '~sanitize.css';
+
+// focused style
+*:focus,
+.state-focused {
+  outline: 2px auto rgba(#2e89ff, 0.6);
+}
+
+// ie input widget disable
+::-ms-clear {
+  display: none;
+}
+
+::-ms-reveal {
+  display: none;
+}
+
+// disabled arrows in input type number
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button,
+input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+@keyframes autofill {
+  to {
+    background: transparent;
+    color: #000;
+  }
+}
+
+input:-webkit-autofill {
+  animation-name: autofill;
+  animation-fill-mode: both;
+}
+
+// list styles reset
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// button styles reset
+.button-reset {
+  padding: 0;
+  border: 0 solid transparent;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+html {
+  font-size: $font-size-base;
+  font-family: $font-base;
+  word-break: normal;
+}
+
+body {
+  min-width: 320px;
+  overscroll-behavior-y: none;
+  -webkit-font-smoothing: antialiased;
+}

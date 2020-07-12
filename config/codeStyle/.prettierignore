@@ -1,0 +1,12 @@
+public/
+node_modules/
+package-lock.json
+yarn.lock
+package.json
+app/assets/images/
+app/assets/fonts/
+app/**/*.scss
+app/**/*.css
+app/**/*.snap
+app/**/*.svg
+app/**/*.pug
