@@ -1,0 +1,67 @@
+{
+  "icons": [
+    {
+      "src": "/icon_180x180.99d900cf873093259d56fa2f460c12f5.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_167x167.d1d61b15ed25ee01214e03cc34fc4998.png",
+      "sizes": "167x167",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_152x152.e7f8388ec394742772ff8ea624f9be83.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_120x120.ee407145b5eed3406900f50eac16ced2.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_512x512.f24aff8d0003f132fae96a351edc4d79.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.2dbf8aab131d6d7c83e0f2a3700cbe80.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.bb9b54b6ebedde3d50314d84ec6e15a9.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_144x144.cb14088ea7382e45ac5bfcd243c323c1.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.81ed3035b9e428f22db8379df75650a2.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.4dc26e26118a7fa147c91e25104abc51.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_72x72.af3c2bf867788bb4173ba3d19fcc65ca.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }
+  ],
+  "name": "github-repos-search",
+  "short_name": "github-repos-search",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "github repositories search",
+  "background_color": "#18191a",
+  "theme_color": "#18191a"
+}
