@@ -8,6 +8,7 @@ import 'components/formField/js/'
 import 'components/textInput/js/'
 import 'components/select/js/'
 import 'components/repoItem/js/'
+import 'components/preloader/js/'
 
 // containers
 import 'containers/siteHeader/js/'

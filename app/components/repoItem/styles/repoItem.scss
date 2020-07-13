@@ -7,24 +7,51 @@
   border: 1px solid $white-alpha-20;
   border-radius: 3px;
   box-shadow: $box-shadow;
+
+  @include bp(max, 960px) {
+    width: 100%;
+  }
+
+  @include bp(max, 680px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .repo-item__avatar {
-  object-fit: cover;
   overflow: hidden;
   width: rem-calc(86px);
   height: rem-calc(86px);
+
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  @include bp(max, 680px) {
+    margin-bottom: rem-calc(18px);
+  }
 }
 
 .repo-item__info {
   width: calc(100% - #{rem-calc(86px)});
   padding-left: rem-calc(16px);
+
+  @include bp(max, 680px) {
+    width: 100%;
+    padding-left: 0;
+  }
 }
 
 .repo-item__header {
+  overflow: hidden;
   margin: 0 0 rem-calc(16px);
+  padding-right: rem-calc(28px);
   font-weight: 400;
   font-size: rem-calc(24px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .repo-item__description {

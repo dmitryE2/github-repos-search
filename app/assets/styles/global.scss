@@ -63,6 +63,10 @@ html {
   font-size: $font-size-base;
   font-family: $font-base;
   word-break: normal;
+
+  @include bp(max, 960px) {
+    font-size: $font-size-medium;
+  }
 }
 
 body {

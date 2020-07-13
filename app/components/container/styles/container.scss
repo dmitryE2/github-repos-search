@@ -3,4 +3,8 @@
   max-width: 1360px;
   margin: 0 auto;
   padding: 0 rem-calc(60px);
+
+  @include bp(max, 960px) {
+    padding: 0 rem-calc(16px);
+  }
 }

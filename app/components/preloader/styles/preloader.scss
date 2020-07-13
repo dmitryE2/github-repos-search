@@ -1,0 +1,26 @@
+.preloader {
+  display: none;
+  width: rem-calc(32px);
+  height: rem-calc(32px);
+  margin: rem-calc(16px) auto 0;
+  border-radius: 50%;
+  background-color: $base-teal;
+
+  &.state-visible {
+    display: block;
+    animation-name: preloader;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes preloader {
+  0% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}

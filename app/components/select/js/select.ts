@@ -162,7 +162,7 @@ class Select implements ISelect {
     this.options[this.focusedIndex].classList.remove(this.hoverOptionClass)
   }
 
-  private choiceOption = (element: HTMLElement): void => {
+  private choiceOption = (element: HTMLElement, trigger: boolean = true): void => {
     const title = element.textContent as string
     const value = element.dataset.value as string
     this.state.value = value || title
@@ -171,7 +171,7 @@ class Select implements ISelect {
     this.currentOption = element
     element.classList.add('state-active')
     this.dropdown.setAttribute('aria-activedescendant', element.getAttribute('id') as string)
-    if (this.params.onChoice)
+    if (this.params.onChoice && trigger)
       this.params.onChoice(this.state.value, this.params.name, this.valueTitle.textContent)
   }
 
@@ -227,7 +227,7 @@ class Select implements ISelect {
     const element = this.dropdown.querySelector(
       `.select-item[data-value='${this.params.defaultValue}']`,
     ) as HTMLElement
-    this.choiceOption(element)
+    this.choiceOption(element, false)
   }
 
   private init() {

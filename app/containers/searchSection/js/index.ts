@@ -1,9 +1,7 @@
 import '../styles/searchSection.scss'
-import { Select } from 'components/select/js/select'
+import { SearchRepos } from './searchRepos'
+import { addEventsSearchBlockPosition } from './searchBlockPosition'
 
-const testOnChoice = (value: string, name: string, title: string) => {
-  console.log(value, name, title)
-}
+new SearchRepos()
 
-new Select('#sort-select', { name: 'sort', defaultValue: 'match', onChoice: testOnChoice })
-new Select('#languages-select', { name: 'sort', defaultValue: 'all', onChoice: testOnChoice })
+addEventsSearchBlockPosition()

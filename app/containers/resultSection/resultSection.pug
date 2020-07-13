@@ -1,9 +1,6 @@
-include ~components/container/container.pug
+include ~components/preloader/preloader.pug
 
 section.result-section
   +container
     .result-list
-      include ~components/repoItem/repoItem.pug
-      include ~components/repoItem/repoItem.pug
-      include ~components/repoItem/repoItem.pug
-      include ~components/repoItem/repoItem.pug
+    +preloader(class='result-section__preloader')
