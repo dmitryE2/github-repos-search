@@ -155,7 +155,7 @@ module.exports = merge(baseConfig, {
     new OfflinePlugin({
       relativePaths: false,
       publicPath: '/',
-      // appShell: '/',
+      appShell: '/',
       excludes: ['.htaccess'],
       caches: {
         main: [':rest:'],
@@ -175,8 +175,8 @@ module.exports = merge(baseConfig, {
       name: 'github-repos-search',
       short_name: 'github-repos-search',
       description: 'github repositories search',
-      background_color: '#ffffff',
-      theme_color: '#ffffff',
+      background_color: '#18191a',
+      theme_color: '#18191a',
       inject: true,
       ios: true,
       icons: [

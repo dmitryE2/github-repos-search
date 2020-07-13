@@ -3,7 +3,12 @@
 // focused style
 *:focus,
 .state-focused {
-  outline: 2px auto rgba(#2e89ff, 0.6);
+  outline: 2px auto rgba($base-blue, 0.6);
+}
+
+// placeholder styles
+::placeholder {
+  color: $placeholder-text;
 }
 
 // ie input widget disable
@@ -62,6 +67,8 @@ html {
 
 body {
   min-width: 320px;
+  background-color: $primary-background;
+  color: $primary-text;
   overscroll-behavior-y: none;
   -webkit-font-smoothing: antialiased;
 }

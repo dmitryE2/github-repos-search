@@ -1,0 +1,10 @@
+mixin select(title, label, ...items)
+  .select-wrapper
+    .select&attributes(attributes)
+      button.select-button(aria-haspopup='listbox', aria-expanded='false')
+        span.select-label= label
+        span.select-button__title= title
+      .select-dropdown(tabindex='-1', role='listbox')
+        ul.select-list(tabindex='1')
+          each item in items
+            li.select-item(role='option', data-value=item.value)= item.title

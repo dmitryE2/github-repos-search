@@ -1,0 +1,17 @@
+.text-input {
+  width: 100%;
+  height: rem-calc(38px);
+  padding: rem-calc(8px) rem-calc(12px);
+  border: 1px solid $white-alpha-20;
+  border-radius: 3px;
+  background-color: transparent;
+  color: $primary-text;
+  box-shadow: $box-shadow;
+  font-size: rem-calc(16px);
+  transition: $main-transition;
+
+  &:focus {
+    border-color: $base-blue;
+    outline: none;
+  }
+}

@@ -1,0 +1,94 @@
+.select {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+
+.select-button {
+  padding: rem-calc(8px) rem-calc(12px);
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: $white-alpha-10;
+  color: $primary-text;
+  font-size: rem-calc(16px);
+  cursor: pointer;
+  transition: $main-transition;
+
+  &:hover {
+    background-color: $white-alpha-15;
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    vertical-align: rem-calc(-4px);
+    width: 0;
+    height: 0;
+    margin-left: rem-calc(8px);
+    border: 6px solid transparent;
+    border-top-color: $primary-text;
+  }
+
+  &:focus {
+    border-color: $base-blue;
+    outline: none;
+  }
+}
+
+.select-label {
+  opacity: 0.6;
+}
+
+.select-dropdown {
+  position: absolute;
+  top: 100%;
+  overflow: hidden;
+  width: 100%;
+  margin-top: rem-calc(8px);
+  border-radius: 3px;
+  background-color: $primary-background;
+  box-shadow: $box-shadow;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px) scaleY(0.9);
+  transform-origin: top;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.state-opened .select-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity, transform 140ms $main-easing;
+  transform: translateY(0) scaleY(1);
+}
+
+.select-list {
+  width: 100%;
+  padding: rem-calc(8px) 0;
+  background-color: $white-alpha-10;
+}
+
+.select-item {
+  margin: 0 rem-calc(8px);
+  padding: rem-calc(4px) rem-calc(12px);
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: rem-calc(16px);
+  white-space: nowrap;
+  cursor: default;
+  transition: $main-transition;
+
+  &.state-hovered {
+    background-color: $white-alpha-15;
+    cursor: pointer;
+  }
+
+  &.state-active {
+    border-color: $base-blue;
+    color: $base-blue;
+    cursor: default;
+  }
+}

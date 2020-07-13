@@ -1,0 +1,33 @@
+include ~components/container/container.pug
+include ~components/formField/formField.pug
+include ~components/textInput/textInput.pug
+include ~components/select/select.pug
+
+section.search-section
+  +container
+    +formField
+      +textInput('search')(id='searchInput', placeholder='Search')
+    +formField(class='search-controls')
+      .serch-amount
+        |75,712 repository results
+      .serch-sort
+        .serch-sort__item
+          +select('', label='Sort: ',
+            {value: 'match', title: 'Best match'},
+            {value: 'stars', title: 'Most stars'},
+            {value: 'stars', title: 'Fewest stars'},
+            {value: 'forks', title: 'Most forks'},
+            {value: 'forks', title: 'Fewest forks'},
+            {value: 'updated', title: 'Recently updated'},
+            {value: 'updated', title: 'Least recently updated'},
+            )(id='sort-select')
+        .serch-sort__item
+          +select('', label='Languages: ',
+            {value: 'all', title: 'All languages'},
+            {value: 'Java', title: 'Java'},
+            {value: 'C', title: 'C'},
+            {value: 'C++', title: 'C++'},
+            {value: 'C#', title: 'C#'},
+            {value: 'JavaScript', title: 'JavaScript'},
+            {value: 'PHP', title: 'PHP'},
+            )(id='languages-select')

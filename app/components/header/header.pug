@@ -1,0 +1,8 @@
+mixin header(level, text)
+  case level
+    when 1
+      h1.font-header.font-header--size-xl= text
+    when 2
+      h2.font-header.font-header--size-l= text
+    when 3
+      h3.font-header.font-header--size-m= text

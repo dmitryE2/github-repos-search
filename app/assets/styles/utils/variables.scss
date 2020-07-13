@@ -10,7 +10,48 @@ $color-tg: #2ca4e0;
 $color-gram: #832ac4;
 
 // projects color
+$base-blue: #1877f2;
+$base-cherry: #f3425f;
+$base-grape: #8c72cb;
+$base-lemon: #fcd872;
+$base-lime: #a3ce71;
+$base-pink: #ec7ebd;
+$base-seafoam: #54c7ec;
+$base-teal: #6bcebb;
+$base-tomato: #fb724b;
+$blue-link: #4599ff;
 
+$primary-background: #18191a;
+$secondary-background: #242526;
+$primary-icon: #e4e6eb;
+$primary-text: #e4e6eb;
+$secondary-icon: #b0b3b8;
+$secondary-text: #b0b3b8;
+$placeholder-icon: #8a8d91;
+$placeholder-text: #8a8d91;
+
+$black-alpha-05: rgba(0, 0, 0, 0.05);
+$black-alpha-10: rgba(0, 0, 0, 0.1);
+$black-alpha-15: rgba(0, 0, 0, 0.15);
+$black-alpha-20: rgba(0, 0, 0, 0.2);
+$black-alpha-30: rgba(0, 0, 0, 0.3);
+$black-alpha-40: rgba(0, 0, 0, 0.4);
+$black-alpha-50: rgba(0, 0, 0, 0.5);
+$black-alpha-60: rgba(0, 0, 0, 0.6);
+$black-alpha-80: rgba(0, 0, 0, 0.8);
+
+$white-alpha-05: rgba(255, 255, 255, 0.05);
+$white-alpha-10: rgba(255, 255, 255, 0.1);
+$white-alpha-15: rgba(255, 255, 255, 0.15);
+$white-alpha-20: rgba(255, 255, 255, 0.2);
+$white-alpha-30: rgba(255, 255, 255, 0.3);
+$white-alpha-40: rgba(255, 255, 255, 0.4);
+$white-alpha-50: rgba(255, 255, 255, 0.5);
+$white-alpha-60: rgba(255, 255, 255, 0.6);
+$white-alpha-80: rgba(255, 255, 255, 0.8);
+
+$box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1),
+  inset 0 0 0 1px rgba(255, 255, 255, 0.05);
 
 // layouts
 $layout-width-base: 1360px;
@@ -27,7 +68,7 @@ $layout-padding-small: 0 rem-calc(12px);
 $font-size-base: 16px;
 $font-size-medium: 14px;
 $font-size-small: 12px;
-$font-base: 'Montserrat', 'Calibri', Helvetica, Arial, sans-serif;
+$font-base: system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
 $font-accent: 'Georgia', 'Times New Roman', Times, serif;
 
 // CSS cubic-bezier timing functions.

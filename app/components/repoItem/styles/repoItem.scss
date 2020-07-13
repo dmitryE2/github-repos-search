@@ -1,0 +1,64 @@
+.repo-item {
+  position: relative;
+  display: flex;
+  width: 49%;
+  margin-bottom: rem-calc(22px);
+  padding: rem-calc(18px) rem-calc(16px);
+  border: 1px solid $white-alpha-20;
+  border-radius: 3px;
+  box-shadow: $box-shadow;
+}
+
+.repo-item__avatar {
+  object-fit: cover;
+  overflow: hidden;
+  width: rem-calc(86px);
+  height: rem-calc(86px);
+}
+
+.repo-item__info {
+  width: calc(100% - #{rem-calc(86px)});
+  padding-left: rem-calc(16px);
+}
+
+.repo-item__header {
+  margin: 0 0 rem-calc(16px);
+  font-weight: 400;
+  font-size: rem-calc(24px);
+}
+
+.repo-item__description {
+  margin-bottom: rem-calc(12px);
+  font-size: rem-calc(16px);
+}
+
+.repo-item__params-list {
+  display: flex;
+  font-size: rem-calc(14px);
+}
+
+.repo-item__params-item {
+  margin-right: rem-calc(8px);
+}
+
+.repo-item__params-label {
+  opacity: 0.6;
+}
+
+.repo-item__link {
+  position: absolute;
+  top: rem-calc(8px);
+  right: rem-calc(8px);
+  color: $primary-icon;
+  transition: $main-transition;
+
+  &:hover {
+    color: $blue-link;
+  }
+
+  svg {
+    display: block;
+    width: rem-calc(28px);
+    height: rem-calc(28px);
+  }
+}

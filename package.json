@@ -91,7 +91,6 @@
     "lint:eslint:fix": "eslint --debug app/ --fix",
     "lint:styles": "stylelint app/**/*.scss",
     "lint:styles:fix": "stylelint --config config/codeStyle/.stylelintrc.js app/**/*.scss --fix",
-    "add:container": "node cli/createFiles.js --type=container",
     "test": "cross-env NODE_ENV=test jest --config config/jest/jest.config.js --coverage",
     "test:watch": "cross-env NODE_ENV=test jest --config config/jest/jest.config.js --watchAll",
     "test:clean": "rimraf ./coverage"

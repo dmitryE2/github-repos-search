@@ -2,7 +2,7 @@ const { statSync, readdirSync, realpathSync } = require('fs')
 const path = require('path')
 
 const appDirectory = realpathSync(process.cwd())
-const resolveApp = relativePath => path.resolve(appDirectory, relativePath)
+const resolveApp = (relativePath) => path.resolve(appDirectory, relativePath)
 
 const getFileInfo = (dir, file) => {
   const fileParts = file.split('.')
@@ -16,7 +16,7 @@ const getFileInfo = (dir, file) => {
 const getEntries = (dir, entryDir) => {
   const files = readdirSync(dir)
   const entries = {}
-  files.forEach(item => {
+  files.forEach((item) => {
     const fileInfo = getFileInfo(dir, item)
     if (statSync(fileInfo.path).isDirectory()) {
       getEntries(fileInfo.path, entryDir)
@@ -31,7 +31,7 @@ const pages = []
 
 const getPages = (dir, entryDir, folder) => {
   const files = readdirSync(dir)
-  files.forEach(item => {
+  files.forEach((item) => {
     const fileInfo = getFileInfo(dir, item)
     if (statSync(fileInfo.path).isDirectory()) {
       getPages(fileInfo.path, entryDir, fileInfo.name)
@@ -51,7 +51,7 @@ const getPages = (dir, entryDir, folder) => {
 const appPaths = {
   app: resolveApp('./app'),
   appBuild: resolveApp('build'),
-  buildAssets: 'bitrix/templates/orca/assets',
+  buildAssets: 'assets',
   pages: getPages(resolveApp('./app/pages')),
   entries: getEntries(resolveApp('./app/packs')),
   appPublic: resolveApp('./public'),

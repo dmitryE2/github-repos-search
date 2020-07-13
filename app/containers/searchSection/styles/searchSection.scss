@@ -1,0 +1,23 @@
+.search-section {
+  position: relative;
+  z-index: 100;
+}
+
+.search-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.serch-sort__item {
+  display: inline-block;
+  margin-left: rem-calc(12px);
+
+  .select {
+    min-width: rem-calc(260px);
+  }
+
+  .select-button {
+    width: 100%;
+  }
+}
