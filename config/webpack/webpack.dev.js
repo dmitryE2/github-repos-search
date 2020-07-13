@@ -10,7 +10,7 @@ module.exports = merge(baseConfig, {
   devtool: 'cheap-module-eval-source-map',
   devServer: {
     contentBase: pathsConfig.appPublic,
-    host: '192.168.0.101',
+    host: 'localhost',
     port: 8030,
     publicPath: '/',
     historyApiFallback: true,
