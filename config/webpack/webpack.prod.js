@@ -154,8 +154,8 @@ module.exports = merge(baseConfig, {
 
     new OfflinePlugin({
       relativePaths: false,
-      publicPath: '/',
-      appShell: '/',
+      publicPath: './',
+      appShell: './',
       excludes: ['.htaccess'],
       caches: {
         main: [':rest:'],

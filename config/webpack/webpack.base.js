@@ -11,7 +11,7 @@ module.exports = {
   output: {
     filename: `${pathsConfig.buildAssets}/js/[name].js`,
     path: pathsConfig.appBuild,
-    publicPath: '/',
+    publicPath: './',
   },
   module: {
     rules: [
